@@ -1,16 +1,64 @@
-# React + Vite
+matrix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+help
 
-Currently, two official plugins are available:
+about
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+projects
 
-## React Compiler
+skills
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+scan
 
-## Expanding the ESLint configuration
+whoami
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+pwd
+
+ls
+
+cd projects
+
+cat rahat-clinic.txt
+
+cd ..
+
+cd secret
+
+ls
+
+cat .classified
+
+hack
+
+scan
+
+ls
+
+cd secret
+
+sudo root123
+
+ls
+
+cat .classified
+
+alert
+
+
+ask who are you
+
+ask explain portfolio
+
+ask technologies used
+
+ask who created this
+
+
+<!-- BROWSER -->
+cyber://projects
+
+cyber://about
+
+cyber://security
+
+cyber://contact
