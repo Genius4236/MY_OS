@@ -1,3 +1,38 @@
+npm create vite@latest hacker-os -- --template react
+
+
+cd hacker-os
+
+npm install
+
+npm install tailwindcss @tailwindcss/vite
+
+npm install react-router-dom
+
+npm install framer-motion
+
+npm install react-rnd
+
+npm install lucide-react
+
+npm install xterm
+
+npm install gsap
+
+npm install three
+npm install @react-three/fiber
+npm install @react-three/drei
+
+npm install @react-three/rapier
+
+
+
+
+
+
+
+
+
 matrix
 
 help
