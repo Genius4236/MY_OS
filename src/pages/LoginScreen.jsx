@@ -184,7 +184,7 @@ function LoginScreen({ onLogin }) {
             text-center
           "
         >
-          Hint: root / hacker123
+          Hint: mdkhizer / 1234
         </div>
 
       </motion.div>

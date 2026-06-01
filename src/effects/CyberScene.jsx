@@ -30,7 +30,7 @@ function FloatingCube({ position }) {
         position={position}
       >
 
-        <boxGeometry args={[1, 1, 1]} />
+        {/* <boxGeometry args={[1, 1, 1]} /> */}
 
         <meshStandardMaterial
           color="#00ff88"

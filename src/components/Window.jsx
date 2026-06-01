@@ -9,12 +9,12 @@ function Window({
 }) {
   return (
     <Rnd
-      default={{
-        x: defaultPosition.x,
-        y: defaultPosition.y,
-        width: 700,
-        height: 450,
-      }}
+       default={{
+      x: 20,
+      y: 20,
+      width: window.innerWidth - 40,
+      height: window.innerHeight - 80,
+    }}
       minWidth={400}
       minHeight={250}
       bounds="window"

@@ -5,7 +5,9 @@ function generateIP() {
   return `${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}`;
 }
 
-function VisitorTracker() {
+function VisitorTracker({
+  embedded = false,
+}) {
 
   const [visitors, setVisitors] = useState([]);
 
@@ -43,17 +45,17 @@ function VisitorTracker() {
 
   return (
     <div
-      className="
-        absolute top-28 right-5
-        w-72
-        bg-black/80
-        border border-green-500
-        p-4
-        text-green-400
-        z-50
-        shadow-[0_0_20px_#00ff88]
-      "
-    >
+  className={
+    embedded
+      ? "text-green-400"
+      : `
+          absolute top-28 right-5
+          w-72
+          cyber-panel
+          z-50
+        `
+  }
+>
 
       <h2 className="font-bold mb-4">
         VISITOR TRACKER

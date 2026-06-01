@@ -49,7 +49,7 @@ import SystemStats from "../components/SystemStats";
 
 import ActivityLog from "../components/ActivityLog";
 import VisitorTracker from "../components/VisitorTracker";
-import ThreatMonitor from "../components/ThreatMonitor";
+// import ThreatMonitor from "../components/ThreatMonitor";
 
 import CyberScene from "../effects/CyberScene";
 import CyberParticles from "../effects/CyberParticles";
@@ -57,6 +57,10 @@ import CyberParticles from "../effects/CyberParticles";
 import CyberHUD from "../components/CyberHUD";
 
 import BrowserApp from "../apps/BrowserApp";
+
+import CyberMonitorApp from "../apps/CyberMonitorApp";
+
+import FullScreenWindow from "../components/FullScreenWindow";
 
 function Desktop() {
   const [terminalOpen, setTerminalOpen] = useState(false);
@@ -67,6 +71,7 @@ function Desktop() {
     skills: false,
     contact: false,
     browser: false,
+    monitor: false,
   });
   const openWindow = (name) => {
     setWindows((prev) => ({
@@ -214,12 +219,23 @@ return (
     <BrowserApp />
   </Window>
 )}
+ {/* MONITOR */}
+{
+  windows.monitor && (
+    <Window
+      title="CyberMonitor.exe"
+      onClose={() => closeWindow("monitor")}
+
+    >
+      <CyberMonitorApp />
+    </Window>
+  )
+}
 
       <SystemStats />
       <Taskbar />
-      <ActivityLog />
-      <VisitorTracker />
-      <ThreatMonitor />
+
+      {/* <ThreatMonitor /> */}
       
     </div>
   );
