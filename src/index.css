@@ -1,22 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700&display=swap');
 @import "tailwindcss";
-
+:root {
+  /* Default Theme: Green */
+  --accent: #00ff88;
+  --accent-glow: rgba(0, 255, 136, 0.4);
+  --accent-dim: rgba(0, 255, 136, 0.15);
+  --accent-bg: rgba(0, 15, 8, 0.85);
+  --font-cyber: 'Share Tech Mono', monospace;
+}
+[data-theme="cyan"] {
+  --accent: #00f3ff;
+  --accent-glow: rgba(0, 243, 255, 0.4);
+  --accent-dim: rgba(0, 243, 255, 0.15);
+  --accent-bg: rgba(0, 12, 15, 0.85);
+}
+[data-theme="amber"] {
+  --accent: #ffb700;
+  --accent-glow: rgba(255, 183, 0, 0.4);
+  --accent-dim: rgba(255, 183, 0, 0.15);
+  --accent-bg: rgba(15, 10, 0, 0.85);
+}
+[data-theme="violet"] {
+  --accent: #d600ff;
+  --accent-glow: rgba(214, 0, 255, 0.4);
+  --accent-dim: rgba(214, 0, 255, 0.15);
+  --accent-bg: rgba(15, 0, 15, 0.85);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   overflow: hidden;
-  background: black;
-  color: #00ff88;
-  font-family: monospace;
+  background: #000;
+  color: var(--accent);
+  font-family: var(--font-cyber);
+  text-shadow: 0 0 2px var(--accent-glow);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-
+/* Glassmorphism Cyber Panel */
+.cyber-panel {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 20px var(--accent-dim), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.cyber-panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.15) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+/* Cyber Button Styling */
+.cyber-btn {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  text-shadow: 0 0 2px var(--accent-glow);
+}
+.cyber-btn:hover {
+  background: var(--accent);
+  color: #000;
+  box-shadow: 0 0 15px var(--accent);
+  text-shadow: none;
+}
+/* Scrollbar Customization */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 6px;
+  height: 6px;
 }
-
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+  border-left: 1px solid var(--accent-dim);
+}
 ::-webkit-scrollbar-thumb {
-  background: #00ff88;
+  background: var(--accent);
+  border-radius: 3px;
+  box-shadow: 0 0 8px var(--accent);
+}
+/* Scanline and Flicker Animation */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+.animate-scanline {
+  animation: scanline 12s linear infinite;
+}
+/* Custom glow utility */
+.accent-glow {
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+.accent-text-glow {
+  text-shadow: 0 0 5px var(--accent);
+}
+.accent-border {
+  border-color: var(--accent);
+}
+.accent-bg {
+  background-color: var(--accent);
+}
+/* Equalizer animations */
+@keyframes led-grow {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+.animate-led {
+  transform-origin: bottom;
+  animation: led-grow 1.2s ease-in-out infinite;
 }
