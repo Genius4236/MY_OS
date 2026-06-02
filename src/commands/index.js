@@ -64,9 +64,9 @@ CyberSec     ████████   85%
 `,
 
   contact: () => `
-Email: khizer@example.com
-GitHub: github.com/khizer
-LinkedIn: linkedin.com/in/khizer
+Email: mdkhizer15@gmail.com
+GitHub: github.com/Genius4236
+LinkedIn: linkedin.com/in/md-khizer-0b31a5314
 `,
 
   whoami: () => `

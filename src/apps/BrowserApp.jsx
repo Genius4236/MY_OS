@@ -121,11 +121,11 @@ const pages = {
         <div className="space-y-3 text-xs">
           <div className="border border-[var(--accent-dim)] p-3 rounded bg-black/40">
             <span className="text-[10px] text-[var(--accent)]/60 uppercase block">Secure Email Node</span>
-            <a href="mailto:khizer@example.com" className="text-white hover:text-[var(--accent)] transition-colors font-bold underline">khizer@example.com</a>
+            <a href="mailto:mdkhizer15@gmail.com" className="text-white hover:text-[var(--accent)] transition-colors font-bold underline">mdkhizer15@gmail.com</a>
           </div>
           <div className="border border-[var(--accent-dim)] p-3 rounded bg-black/40">
             <span className="text-[10px] text-[var(--accent)]/60 uppercase block">GitHub Secure Codebase</span>
-            <a href="#" className="text-white hover:text-[var(--accent)] transition-colors font-bold underline">github.com/khizer</a>
+            <a href="https://github.com/Genius4236" className="text-white hover:text-[var(--accent)] transition-colors font-bold underline">github.com/Genius4236</a>
           </div>
         </div>
       </div>

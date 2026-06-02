@@ -149,7 +149,7 @@ function ContactApp() {
       {/* External channels */}
       <div className="grid grid-cols-3 gap-2.5 pt-1 text-[10px] uppercase font-bold tracking-widest">
         <a
-          href="mailto:khizer@example.com"
+          href="mdkhizer15@gmail.com"
           onClick={() => playSoundEffect("click")}
           className="flex items-center justify-center gap-1.5 border border-[var(--accent)]/20 p-2 rounded hover:border-[var(--accent)] hover:bg-[var(--accent-dim)] transition-all text-center text-[var(--accent)]/80 hover:text-white"
         >
@@ -157,7 +157,7 @@ function ContactApp() {
           EMAIL
         </a>
         <a
-          href="https://github.com/khizer"
+          href="https://github.com/Genius4236"
           target="_blank"
           rel="noreferrer"
           onClick={() => playSoundEffect("click")}
@@ -167,7 +167,7 @@ function ContactApp() {
           GITHUB
         </a>
         <a
-          href="https://linkedin.com/in/khizer"
+          href="https://www.linkedin.com/in/md-khizer-0b31a5314"
           target="_blank"
           rel="noreferrer"
           onClick={() => playSoundEffect("click")}
